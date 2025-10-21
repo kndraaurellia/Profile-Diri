@@ -1,102 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>Profile Diri</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-
-    <style>
-        textarea {
-            width: 80%;
-            height: 150px;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Kendra Aurellia</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Profil Mahasiswa</h1>
-        <nav>
-            <a href="#biodata">Biodata</a> | 
-            <a href="#pendidikan">Riwayat Pendidikan</a> | 
-            <a href="#hobi">Hobi</a> | 
-            <a href="#organisasi">Pengalaman Organisasi</a> | 
-            <a href="#kontak">Kontak</a> | 
-            <a href="#sosmed">Sosial Media</a>
-        </nav>
-        <hr>
     </header>
 
-    <section id="biodata">
-        <h2>Biodata</h2>
-        <img src="profile.jpg" alt="Foto Profil" width="150">
-        <p><b>Nama:</b> Kendra Aurellia Renata</p>
-        <p><b>Alamat:</b> Jl. Tebet Barat V No.25, Jakarta Selatan</p>
-        <p><b>Email:</b> kendraaurelliaa@gmail.com</p>
-    </section>
+    <div class="layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <img src="profile.jpg" alt="Foto Profil">
+                <h2>Kendra Aurellia Renata</h2>
+                <p>Mahasiswa Teknologi Informasi</p>
+            </div>
 
-    <section id="pendidikan">
-        <h2>Riwayat Pendidikan</h2>
-        <ul>
-            <li>Primary Global Islamic School</li>
-            <li>SMP Negeri 147 Jakarta</li>
-            <li>SMA Islam Al-Ma'ruf</li>
-        </ul>
-    </section>
+            <nav class="side-nav">
+                <ul>
+                    <li><a href="#biodata">Biodata</a></li>
+                    <li><a href="#pendidikan">Riwayat Pendidikan</a></li>
+                    <li><a href="#hobi">Hobi</a></li>
+                    <li><a href="#organisasi">Organisasi</a></li>
+                    <li><a href="#sosmed">Sosial Media</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </aside>
 
-    <section id="hobi">
-        <h2>Hobi</h2>
-        <ol>
-            <li>Musik</li>
-            <li>Membaca</li>
-            <li>Tidur</li>
-        </ol>
-    </section>
+        <!-- Konten Utama -->
+        <main class="konten">
+            <section id="biodata">
+                <h3>Biodata</h3>
+                <div class="biodata-grid">
+                    <div class="bio-item"><span>Nama:</span> Kendra Aurellia Renata</div>
+                    <div class="bio-item"><span>Alamat:</span> Jl. Tebet Barat V No.25, Jakarta Selatan</div>
+                    <div class="bio-item"><span>Email:</span> kendraaurelliaa@gmail.com</div>
+                </div>
+            </section>
 
-    <section id="organisasi">
-        <h2>Pengalaman Organisasi</h2>
-        <table border="1" cellpadding="5" cellspacing="0">
-            <tr>
-                <th>Nama Organisasi</th>
-                <th>Jabatan</th>
-                <th>Tahun</th>
-            </tr>
-            <tr>
-                <td>Himpunan Mahasiswa Teknologi Informasi</td>
-                <td>Anggota Divisi Kesenian</td>
-                <td>2025</td>
-            </tr>
-            <tr>
-                <td>Ratoh Jaroe Al-Ma'ruf</td>
-                <td>Ketua</td>
-                <td>2023 - 2024</td>
-            </tr>
-        </table>
-    </section>
+            <section id="pendidikan">
+                <h3>Riwayat Pendidikan</h3>
+                <ul>
+                    <li>Primary Global Islamic School</li>
+                    <li>SMP Negeri 147 Jakarta</li>
+                    <li>SMA Islam Al-Ma'ruf</li>
+                </ul>
+            </section>
 
-    <section id="kontak">
-        <h2>Kontak</h2>
-        <form action="#" method="post">
-            <label for="nama">Nama:</label><br>
-            <input type="text" id="nama" name="nama" required ><br><br>
-            
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="pesan">Pesan:</label><br>
-            <textarea id="pesan" name="pesan" rows="4" required></textarea><br><br>
-            
-            <input type="submit" value="Kirim">
-        </form>
-    </section>
+            <section id="hobi">
+                <h3>Hobi</h3>
+                <ol>
+                    <li>Musik</li>
+                    <li>Membaca</li>
+                    <li>Tidur</li>
+                </ol>
+            </section>
 
-    <section id="sosmed">
-        <h2>Media Sosial</h2>
-        <ul>
-            <li><a href="https://instagram.com/kndraaurellia" target="_blank">Instagram</a></li>
-        </ul>
-    </section>
+            <section id="organisasi">
+                <h3>Pengalaman Organisasi</h3>
+                <table>
+                    <tr>
+                        <th>Organisasi</th>
+                        <th>Jabatan</th>
+                        <th>Tahun</th>
+                    </tr>
+                    <tr>
+                        <td>Himpunan Mahasiswa TI</td>
+                        <td>Anggota Divisi Kesenian</td>
+                        <td>2025</td>
+                    </tr>
+                    <tr>
+                        <td>Ratoh Jaroe Al-Ma’ruf</td>
+                        <td>Ketua</td>
+                        <td>2023 - 2024</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="sosmed">
+                <h3>Sosial Media</h3>
+                <ul>
+                    <li><a href="https://instagram.com/kndraaurellia" target="_blank">Instagram</a></li>
+                </ul>
+            </section>
+
+            <section id="kontak">
+                <h3>Kontak</h3>
+                <form>
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="pesan">Pesan:</label>
+                    <textarea id="pesan" rows="4" required></textarea>
+
+                    <input type="submit" value="Kirim">
+                </form>
+            </section>
+        </main>
+    </div>
 
     <footer>
-        <hr>
         <p>&copy; 2025 Profil Kendra</p>
     </footer>
 </body>
